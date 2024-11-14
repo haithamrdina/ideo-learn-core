@@ -6,7 +6,7 @@ use Illuminate\Console\Command;
 
 class PublishCommand extends Command
 {
-    protected $signature = 'ideolean:publish';
+    protected $signature = 'ideolearn:publish';
 
     protected $description = 'Publish all IdeoLearn required configurations';
 
