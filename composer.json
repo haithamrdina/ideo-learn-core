@@ -1,13 +1,9 @@
 {
     "name": "ideolearn/core",
     "description": "core package for ideolearn microservices",
-    "type": "package",
+    "version": "1.0.0",
     "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "Ideolearn\\Core\\": "src/"
-        }
-    },
+    "homepage": "https://github.com/haithamrdina/ideo-learn-core",
     "authors": [
         {
             "name": "Haitham Rdina"
@@ -28,6 +24,15 @@
             ]
         }
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    "autoload": {
+        "psr-4": {
+            "Ideolearn\\Core\\": "src/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packagist.org"
+        }
+    ]
 }
