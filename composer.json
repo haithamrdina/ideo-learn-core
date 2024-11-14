@@ -1,7 +1,6 @@
 {
     "name": "ideolearn/core",
     "description": "core package for ideolearn microservices",
-    "version": "1.0.3",
     "license": "MIT",
     "homepage": "https://github.com/haithamrdina/ideo-learn-core",
     "authors": [
