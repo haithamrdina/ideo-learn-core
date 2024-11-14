@@ -24,14 +24,16 @@ class IdeoLearnServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        // Publish mcamara/laravel-localization configuration
-        $this->publishes([
-            base_path('vendor/mcamara/laravel-localization/config/laravellocalization.php') => config_path('laravellocalization.php'),
-        ], 'ideolean-localization');
+        if ($this->app->runningInConsole()) {
+            // Publish mcamara/laravel-localization configuration
+            $this->publishes([
+                base_path('vendor/mcamara/laravel-localization/config/laravellocalization.php') => config_path('laravellocalization.php'),
+            ], 'ideolean-localization');
 
-        // Publish spatie/laravel-translatable configuration (if needed)
-        $this->publishes([
-            base_path('vendor/spatie/laravel-translatable/config/translatable.php') => config_path('translatable.php'),
-        ], 'ideolean-translatable');
+            // Register the command if we're using the application via CLI
+            $this->commands([
+                Console\Commands\PublishCommand::class
+            ]);
+        }
     }
 }
