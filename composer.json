@@ -1,0 +1,30 @@
+{
+    "name": "ideolearn/core",
+    "description": "core package for ideolearn microservices",
+    "type": "package",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Ideolearn\\Core\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Haitham Rdina"
+        }
+    ],
+    "require": {
+        "spatie/laravel-translatable": "^6.5",
+        "mcamara/laravel-localization": "^1.8",
+        "league/flysystem-aws-s3-v3": "^3.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "IdeoLearn\\Core\\IdeoLearnServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
