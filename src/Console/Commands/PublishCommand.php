@@ -17,13 +17,5 @@ class PublishCommand extends Command
             '--provider' => 'Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider',
             '--force' => true
         ]);
-
-        $this->info('Publishing spatie/laravel-translatable configuration...');
-        $this->call('vendor:publish', [
-            '--provider' => 'Spatie\Translatable\TranslatableServiceProvider',
-            '--force' => true
-        ]);
-
-        $this->info('All configurations have been published successfully!');
     }
 }
