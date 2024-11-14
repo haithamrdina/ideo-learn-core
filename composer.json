@@ -14,9 +14,12 @@
         }
     ],
     "require": {
-        "spatie/laravel-translatable": "^6.5",
-        "mcamara/laravel-localization": "^1.8",
-        "league/flysystem-aws-s3-v3": "^3.0"
+        "php": "^8.2",
+        "laravel/framework": "^11.9",
+        "laravel/tinker": "^2.9",
+        "league/flysystem-aws-s3-v3": "^3.29",
+        "mcamara/laravel-localization": "^2.0",
+        "spatie/laravel-translatable": "^6.8"
     },
     "extra": {
         "laravel": {
